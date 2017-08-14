@@ -2,7 +2,7 @@ function bigText(x) {
     document.getElementById(x).innerHTML = "hello";
 }
 
-function normalImg(x) {
+function normalText(x) {
     document.getElementById(x).style.fontSize = 30px;
 }
 

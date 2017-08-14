@@ -1,6 +1,4 @@
-body{
-	background-image: url("selling-farmland.jpg"); 
-}
+
 #map {
         height: 400px;
         width: 100%;
@@ -13,7 +11,7 @@ body{
 	color: rgb(62, 36, 157);
 }
 .purple{
-	background-color: rgb(62, 36, 157);
+	background-color: rgb(213, 71, 47);
 	font-size: 20px;
 	text-align: center;
 	color: rgb(193, 176, 244);
@@ -51,28 +49,14 @@ body{
     text-align: center;
     font-size: 30px;
     font-family: "Times New Roman";
+    text-decoration: none;
 }
-#Text1{
-    color: #000000;
-    padding: 100px 10px;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Times New Roman";
+
+.notextdec{
+	color: white;
+	text-decoration: none;
 }
-#Text2{
-    color: #000000;
-    padding: 100px 10px;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Times New Roman";
-}
-#Text3{
-    color: #000000;
-    padding: 100px 10px;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Times New Roman";
-}
+
 .img-circle {
     border-radius: 50%;
 }
@@ -83,8 +67,12 @@ body{
 .container{
 	height: 230px;
 }
+.wehtitle{
+	font-size: 100px;
+	color: rgb();
+}
 #contained{
-	height: 100px;
+	height: 50px;
 	text-align: center;
 	color: rgb(62, 36, 157);
 }
