@@ -1,0 +1,96 @@
+body{
+	background-image: url("selling-farmland.jpg"); 
+}
+#map {
+        height: 400px;
+        width: 100%;
+       }
+       
+#conten{
+	}
+#titl{
+	text-align: center;
+	color: rgb(62, 36, 157);
+}
+.purple{
+	background-color: rgb(62, 36, 157);
+	font-size: 20px;
+	text-align: center;
+	color: rgb(193, 176, 244);
+}
+.cent{
+	text-align: center;
+	color: #FEFF51;
+
+}
+#imag {
+    float: left;
+    margin: 10px 10px 0 0;
+}
+#imag2 {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+.BlockSize{
+	padding-left: 300px;
+	padding-right: 300px;
+	padding-bottom: 50px;
+	padding-top: 50px; 
+}
+.top{
+	font-size: 70px;
+}
+.low{
+	font-size: 20px;
+	text-align: center;
+	color: rgb(193, 176, 244);
+}
+#Text{
+    color: #000000;
+    padding: 100px 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Times New Roman";
+}
+#Text1{
+    color: #000000;
+    padding: 100px 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Times New Roman";
+}
+#Text2{
+    color: #000000;
+    padding: 100px 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Times New Roman";
+}
+#Text3{
+    color: #000000;
+    padding: 100px 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Times New Roman";
+}
+.img-circle {
+    border-radius: 50%;
+}
+.white{
+		background-color: #ffffff;
+		font-size: 70px;
+}
+.container{
+	height: 230px;
+}
+#contained{
+	height: 100px;
+	text-align: center;
+	color: rgb(62, 36, 157);
+}
+#contain2{
+	height: 30px;
+}
+.black{
+	background-color: rgb(158, 158, 158);
+}
