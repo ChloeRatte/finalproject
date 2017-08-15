@@ -1,16 +1,24 @@
+var q = document.getElementById
+
 
 function getData() {
   $.ajax({
     url: "https://api.edamam.com/search",
     data: {
-      q: "chicken",
+      q: "lunch",
       app_id:"0af4c33f",
       app_key:"95be53f1e879fb340befc460bf37611b",
       from: 0,
-      to: 3
+      to: 1
     },
     success: function(data) {
       console.log(data);
+      console.log("THE RECIPE")
+      console.log(data.hits[0].recipe.ingredients)
+      const stuff = data.hits[0].recipe.ingredients
+      for (var i = 0; i < stuff.length; i++){
+        console.log(stuff[i])
+      }
       alert("success");
     },
     error: function(err) {
@@ -18,4 +26,10 @@ function getData() {
       alert("error");
     }
   })
+
+  // for (i = 0; i < Ingredient.length; i++) {
+  //   document.getElementById("return").innerHTML= Ingredient[i];
+  // }
+
+  
 };
