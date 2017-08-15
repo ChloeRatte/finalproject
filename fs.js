@@ -19,7 +19,7 @@ function initMap() {
       }
 
 
-//explain to Kylie LAter
+//explain to Kylie Later
 
 function myFunction1(){
 	
