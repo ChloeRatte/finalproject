@@ -1,7 +1,7 @@
 
 
 function getData() {
-  var priceValue = document.getElementById("price").value;
+  var diet = document.getElementById("diet").value;
 
   var peopleValue = document.getElementById("numPeople").value;
 
@@ -24,15 +24,17 @@ function getData() {
       for (var r=0; r<data.hits.length; r++) {
         if (data.hits[r].recipe.yield = peopleValue) {
           options.push(data.hits[r].recipe)
-          console.log(options)
         }
       }
 
-      console.log(data.hits[0].recipe.ingredients)
-      const stuff = data.hits[0].recipe.ingredients
-      for (var i = 0; i < stuff.length; i++){
-        console.log(stuff[i])
-      }
+
+
+      console.log(options)
+      // console.log(data.hits[0].recipe.ingredients)
+      // const stuff = data.hits[0].recipe.ingredients
+      // for (var i = 0; i < stuff.length; i++){
+      //   console.log(stuff[i])
+      // }
       alert("success");
     },
     error: function(err) {
