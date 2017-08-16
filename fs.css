@@ -76,6 +76,10 @@
 	text-decoration: none;
 }
 
+#smallText{
+	font-size: 20px;
+}
+
 .img-circle {
     border-radius: 50%;
 }
