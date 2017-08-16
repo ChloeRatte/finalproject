@@ -1,15 +1,15 @@
-var q = document.getElementById
+// var q = document.getElementById
 
 
 function getData() {
   $.ajax({
     url: "https://api.edamam.com/search",
     data: {
-      q: "lunch",
+      q: "breakfast",
       app_id:"0af4c33f",
       app_key:"95be53f1e879fb340befc460bf37611b",
-      from: 0,
-      to: 1
+      from: 1,
+      to: 5,
     },
     success: function(data) {
       console.log(data);
