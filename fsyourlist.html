@@ -11,57 +11,48 @@
 <body>
 <div class="container">
   <div id="contained" class="purple">
-		  <span id = "Text" onmouseover="bigText(Text)" onmouseout="normalText(Text)" ><a class = "notextdec" href = "fs.html"> Home</a></span>
-      <span id = "Text" onmouseover="bigText(Text1)" onmouseout="normalText(Text1)"> <a class = "notextdec" href = "fshealthy.html">Why Eat Healthy?</a></span>
-      <span id = "Text" onmouseover="bigText(Text2)" onmouseout="normalText(Text2)"><a class = "notextdec" href = "fsabout.html"> About Us</a></span>
-      <span id = "Text" onmouseover="bigText(Text3)" onmouseout="normalText(Text3)"> <a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></span>
+		  <span id = "Text"><a class = "notextdec" href = "fs.html"> Home</a></span>
+      <span id = "Text"><a class = "notextdec" href = "fshealthy.html">Why Eat Healthy?</a></span>
+      <span id = "Text"><a class = "notextdec" href = "fsabout.html"> About Us</a></span>
+      <span id = "Text"><a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></span>
   </div>
 
-	<div id="contained" class = "wehtitle">
-	
-	</div>
-	<h1>
-  CREATE YOUR LIST!
-</h1>
+	<h1>CREATE YOUR LIST!</h1>
 </div>
 
-<div class = "">
-
-<h2>How Much Ya Got</h2>
-  <select>
-  <option value="5">5.00</option>
-  <option value="10">10.00</option>
-  <option value="20">20.00</option>
-  <option value="30">30.00</option>
-  <option value="40">40.00</option>
-  <option value="50">50.00</option>
+<h2>What is the max you would like your meal to cost?</h2>
+  <select name ="price" id="price">
+  <option value="5">$5.00</option>
+  <option value="10">$10.00</option>
+  <option value="20">$20.00</option>
+  <option value="30">$30.00</option>
+  <option value="40">$40.00</option>
+  <option value="50">$50.00</option>
 </select>
 <br>
-<h2>How Many People</h2>
-<select>
+<h2>How many people are you going to be feeding?</h2>
+<select name="numPeople" id="numPeople">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
 </select>
 <br>
-<h2>What Meal?</h2>
-<select>
-  <option value="Breakfast">Breakie</option>
-  <option value="Lunch">Lunch</option>
-  <option value="Dinner">Din Din</option>
-  <option value="dessert">DESSERT</option>
+<h2>What meal of the day are you making?</h2>
+<select name="meal" id="meal">
+  <option value="breakfast">Breakfast</option>
+  <option value="lunch">Lunch</option>
+  <option value="dinner">Dinner</option>
+  <option value="dessert">Dessert</option>
 </select>
 </div>
 <br>
+<!-- This is for  generating the list -->
+
 <div>
-    <button onclick="getData()">Get Data</button>
+    <button onclick="getData()">Get Your Recipe</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="fs.js"></script>
 </div>
-<!-- Make that crap later this is for like generating the list if that wasn't obvious.. so ye -->
-
-
-<button onclick="ButtonFunc()">MAKE YOUR LIST</button>
 </body>
 </html>
