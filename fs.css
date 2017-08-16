@@ -11,7 +11,7 @@
 	color: rgb(62, 36, 157);
 }
 .purple{
-	background-color: #5fdb46
+	background-color: #5fdb46;
 	font-size: 20px;
 	text-align: center;
 	color: rgb(193, 176, 244);
@@ -52,6 +52,20 @@
     text-decoration: none;
 }
 
+#left{
+	float: left;
+	margin-left: 100px;
+	text-align: center;
+}
+
+#right{
+	float: right;
+	margin-right: 100px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
 .notextdec{
 	color: white;
 	text-decoration: none;
@@ -67,24 +81,28 @@
 .container{
 	height: 230px;
 }
+
 .wehtitle{
 	font-size: 100px;
-	color: rgb();
+	color: blue;
 }
+
 #contained{
 	height: 50px;
 	text-align: center;
-	color: rgb(62, 36, 157);
+	color: blue;
 }
+
 #contain2{
 	height: 30px;
 }
+
 .black{
 	background-color: rgb(158, 158, 158);
 
 }
-body{
 
+body{
 	background-color: #FFEED0
 }
 
