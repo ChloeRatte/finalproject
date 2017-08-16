@@ -25,11 +25,5 @@ function getData() {
       console.log(err);
       alert("error");
     }
-  })
-
-  // for (i = 0; i < Ingredient.length; i++) {
-  //   document.getElementById("return").innerHTML= Ingredient[i];
-  // }
-
-  
+  })  
 };
