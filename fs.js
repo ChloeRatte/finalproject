@@ -1,6 +1,8 @@
 
 
 function getData() {
+  document.getElementById("yourRecipe").innerHTML = "";
+
   var diet = document.getElementById("diet").value;
 
   var peopleValue = document.getElementById("numPeople").value;
@@ -25,6 +27,7 @@ function getData() {
       for (var r=0; r<data.hits.length; r++) {
         if (data.hits[r].recipe.yield = peopleValue) {
           yieldOptions.push(data.hits[r].recipe)
+
         }
       }
 
@@ -36,7 +39,22 @@ function getData() {
         if (yieldOptions[d].healthLabels.indexOf(diet) != -1) {
           dietOptions.push(yieldOptions[d]);
             console.log("adding: " + d);
+
+          for (var i=0; i<dietOptions[0].ingredients.length; i++) {
+            console.log(i);
+
+            var theDiv = document.getElementById("yourRecipe");
+            var content = document.createTextNode(dietOptions[0].ingredients[i].text);
+            linebreak = document.createElement("br");
+            theDiv.appendChild(linebreak);
+            theDiv.appendChild(content);        
+
+            // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
+          }
             // delete yieldOptions[d];
+        }else {
+          document.getElementById("yourRecipe").innerHTML = "There are no recipes that match your search"
+    
         }
       }
 
@@ -48,15 +66,6 @@ function getData() {
       //   console.log(stuff[i])
       // }
 
-      for (var i=0; i<dietOptions[0].ingredients.length; i++) {
-        console.log(i);
-
-        var theDiv = document.getElementById("yourRecipe");
-        var content = document.createTextNode(dietOptions[0].ingredients[i].text);
-        theDiv.appendChild(content);        
-
-        // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
-      }
 
       alert("success");
     },
