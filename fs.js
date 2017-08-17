@@ -35,18 +35,29 @@ function getData() {
       for (var d=0; d<yieldOptions.length; d++){
         if (yieldOptions[d].healthLabels.indexOf(diet) != -1) {
           dietOptions.push(yieldOptions[d]);
-            // console.log("deleting: " + d);
+            console.log("adding: " + d);
             // delete yieldOptions[d];
         }
       }
 
-      console.log(dietOptions)
+    
 
       // console.log(data.hits[0].recipe.ingredients)
       // const stuff = data.hits[0].recipe.ingredients
       // for (var i = 0; i < stuff.length; i++){
       //   console.log(stuff[i])
       // }
+
+      for (var i=0; i<dietOptions[0].ingredients.length; i++) {
+        console.log(i);
+
+        var theDiv = document.getElementById("yourRecipe");
+        var content = document.createTextNode(dietOptions[0].ingredients[i].text);
+        theDiv.appendChild(content);        
+
+        // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
+      }
+
       alert("success");
     },
     error: function(err) {
