@@ -29,33 +29,44 @@ function getData() {
         }
       }
 
-      console.log(yieldOptions)
+      console.log(yieldOptions);
+      if(diet.value="None"){
+        var theDiv = document.getElementById("yourRecipe");
+        var content = document.createTextNode(dietOptions[0].ingredients[i].text);
+        linebreak = document.createElement("br");
+        theDiv.appendChild(linebreak);
+        theDiv.appendChild(content);
 
-    var dietOptions = [];
+      }
+    else{
+//----------------------------------------------------------------
 
-      for (var d=0; d<yieldOptions.length; d++){
-        if (yieldOptions[d].healthLabels.indexOf(diet) != -1) {
-          dietOptions.push(yieldOptions[d]);
-            // console.log("adding: " + d);
+        var dietOptions = [];
+        for (var d=0; d<yieldOptions.length; d++){
+          if (yieldOptions[d].healthLabels.indexOf(diet) != -1) {
+            dietOptions.push(yieldOptions[d]);
+              // console.log("adding: " + d);
 
-          for (var i=0; i<dietOptions[0].ingredients.length; i++) {
-            // console.log(i);
+            for (var i=0; i<dietOptions[0].ingredients.length; i++) {
+              // console.log(i);
 
-            var theDiv = document.getElementById("yourRecipe");
-            var content = document.createTextNode(dietOptions[0].ingredients[i].text);
-            linebreak = document.createElement("br");
-            theDiv.appendChild(linebreak);
-            theDiv.appendChild(content);
+              var theDiv = document.getElementById("yourRecipe");
+              var content = document.createTextNode(dietOptions[0].ingredients[i].text);
+              linebreak = document.createElement("br");
+              theDiv.appendChild(linebreak);
+              theDiv.appendChild(content);
 
-            // var btn = document.createElement("BUTTON")        
+              // var btn = document.createElement("BUTTON")        
 
-            // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
+              // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
+            }
+              // delete yieldOptions[d];
+          } else {
+            document.getElementById("yourRecipe").innerHTML = "There are no recipes that match your search"
+      
           }
-            // delete yieldOptions[d];
-        } else {
-          document.getElementById("yourRecipe").innerHTML = "There are no recipes that match your search"
-    
         }
+//----------------------------------------------------------------------------
       }
 
     
