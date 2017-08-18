@@ -32,17 +32,18 @@ function getData() {
       console.log(yieldOptions);
 
 
-      if(diet.value="None"){
-        for (var y=0; yieldOptions.length;d++){
-          var theDiv = document.getElementById("yourRecipe");
-          var content = document.createTextNode(yieldOptions[0].ingredients[y].text);
-          linebreak = document.createElement("br");
-          theDiv.appendChild(linebreak);
-          theDiv.appendChild(content);
-        }
+    if(diet.value="None"){
+      console.log("if");
+      for (var y=0; y<yieldOptions.length;y++){
+        var theDiv = document.getElementById("yourRecipe");
+        var content = document.createTextNode(yieldOptions[0].ingredients[y].text);
+        linebreak = document.createElement("br");
+        theDiv.appendChild(linebreak);
+        theDiv.appendChild(content);
       }
-    else{
+    }else{
 //----------------------------------------------------------------
+        console.log("else");
 
         var dietOptions = [];
         for (var d=0; d<yieldOptions.length; d++){
