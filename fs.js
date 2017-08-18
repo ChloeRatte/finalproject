@@ -32,16 +32,16 @@ function getData() {
       console.log(yieldOptions);
 
 
-    //   if(diet.value="None"){
-    //     for (var y=0; yieldOptions.length;d++){
-    //       var theDiv = document.getElementById("yourRecipe");
-    //       var content = document.createTextNode(yieldOptions[0].ingredients[d].text);
-    //       linebreak = document.createElement("br");
-    //       theDiv.appendChild(linebreak);
-    //       theDiv.appendChild(content);
-    //     }
-    //   }
-    // else{
+      if(diet.value="None"){
+        for (var y=0; yieldOptions.length;d++){
+          var theDiv = document.getElementById("yourRecipe");
+          var content = document.createTextNode(yieldOptions[0].ingredients[y].text);
+          linebreak = document.createElement("br");
+          theDiv.appendChild(linebreak);
+          theDiv.appendChild(content);
+        }
+      }
+    else{
 //----------------------------------------------------------------
 
         var dietOptions = [];
@@ -71,15 +71,15 @@ function getData() {
           }
         }
 //----------------------------------------------------------------------------
-      // }
+      }
 
     
 
-      // console.log(data.hits[0].recipe.ingredients)
-      // const stuff = data.hits[0].recipe.ingredients
-      // for (var i = 0; i < stuff.length; i++){
-      //   console.log(stuff[i])
-      // }
+      console.log(data.hits[0].recipe.ingredients)
+      const stuff = data.hits[0].recipe.ingredients
+      for (var i = 0; i < stuff.length; i++){
+        console.log(stuff[i])
+      }
 
 
       alert("success");
