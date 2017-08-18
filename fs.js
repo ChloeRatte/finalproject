@@ -30,15 +30,18 @@ function getData() {
       }
 
       console.log(yieldOptions);
-      if(diet.value="None"){
-        var theDiv = document.getElementById("yourRecipe");
-        var content = document.createTextNode(dietOptions[0].ingredients[i].text);
-        linebreak = document.createElement("br");
-        theDiv.appendChild(linebreak);
-        theDiv.appendChild(content);
 
-      }
-    else{
+
+    //   if(diet.value="None"){
+    //     for (var y=0; yieldOptions.length;d++){
+    //       var theDiv = document.getElementById("yourRecipe");
+    //       var content = document.createTextNode(yieldOptions[0].ingredients[d].text);
+    //       linebreak = document.createElement("br");
+    //       theDiv.appendChild(linebreak);
+    //       theDiv.appendChild(content);
+    //     }
+    //   }
+    // else{
 //----------------------------------------------------------------
 
         var dietOptions = [];
@@ -61,13 +64,14 @@ function getData() {
               // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
             }
               // delete yieldOptions[d];
-          } else {
+          } 
+          else {
             document.getElementById("yourRecipe").innerHTML = "There are no recipes that match your search"
       
           }
         }
 //----------------------------------------------------------------------------
-      }
+      // }
 
     
 
