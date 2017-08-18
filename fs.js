@@ -1,5 +1,3 @@
-
-
 function getData() {
   document.getElementById("yourRecipe").innerHTML = "";
 
