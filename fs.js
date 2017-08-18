@@ -38,21 +38,23 @@ function getData() {
       for (var d=0; d<yieldOptions.length; d++){
         if (yieldOptions[d].healthLabels.indexOf(diet) != -1) {
           dietOptions.push(yieldOptions[d]);
-            console.log("adding: " + d);
+            // console.log("adding: " + d);
 
           for (var i=0; i<dietOptions[0].ingredients.length; i++) {
-            console.log(i);
+            // console.log(i);
 
             var theDiv = document.getElementById("yourRecipe");
             var content = document.createTextNode(dietOptions[0].ingredients[i].text);
             linebreak = document.createElement("br");
             theDiv.appendChild(linebreak);
-            theDiv.appendChild(content);        
+            theDiv.appendChild(content);
+
+            // var btn = document.createElement("BUTTON")        
 
             // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
           }
             // delete yieldOptions[d];
-        }else {
+        } else {
           document.getElementById("yourRecipe").innerHTML = "There are no recipes that match your search"
     
         }
