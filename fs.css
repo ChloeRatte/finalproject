@@ -102,6 +102,7 @@
 
 .grey{
 	background-color: #C1C1D1;
+	min-height: 250px;
 }
 
 .white{
@@ -147,7 +148,7 @@
 
 .wehtitle{
 	font-size: 100px;
-	color: red;
+	color: white;
 	text-align: center;
 	vertical-align: middle;
 	padding-top: 30px;
