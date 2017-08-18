@@ -77,18 +77,10 @@ function getData() {
               }
 //===========================================
             }
-
-         
+     
 //----------------------------------------------------------------------------  
       }
 
-    
-
-      console.log(data.hits[0].recipe.ingredients)
-      const stuff = data.hits[0].recipe.ingredients
-      for (var i = 0; i < stuff.length; i++){
-        console.log(stuff[i])
-      }
 
 
       alert("success");
