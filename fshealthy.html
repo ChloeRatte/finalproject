@@ -1,66 +1,56 @@
 <html>
-<head> <script type="text/javascript" src="fs.js">
-</script>
-<title> FoodStuffs </title> </head>
+<head> 
+	<script type="text/javascript" src="fs.js"></script>
+	<title> FoodStuffs </title>
+	<link rel = "stylesheet" type="text/css" href="./fs.css">
+ 	<style>
+		body{
+			background-color: #6CD141;
+		} 
+	</style>
+</head>
+
 <body>
-<div id = "conten">
-<link rel = "stylesheet" type="text/css" href="./fs.css">
-<style>
-body{
-	background-color: #6CD141;
-} 
-</style>
+	<div id = "content">
+		<div class="container2 contentChild">
+			<div id="contained" class="purple">
+				<span id = "Text" onmouseover="bigText(Text)" onmouseout="normalText(Text)" ><a class = "notextdec" href = "fs.html"> Home</a></span>
+		  		<span id = "Text" onmouseover="bigText(Text1)" onmouseout="normalText(Text1)"> <a class = "notextdec" href = "fshealthy.html">Why Eat Healthy?</a></span>
+		  		<span id = "Text" onmouseover="bigText(Text2)" onmouseout="normalText(Text2)"><a class = "notextdec" href = "fsabout.html"> About Us</a></span>
+		  		<span id = "Text" onmouseover="bigText(Text3)" onmouseout="normalText(Text3)"> <a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></span>
+			</div>
+			<div class = "wehtitle">
+				Why Eat Healthy?
+			</div>
+			
+		</div>
+
+		<div class = "container1 contentChild">
+				<div class = "left"> <div id="leftChild"><img src = "healthyfood.jpg" alt = "healthyeating"></div></div>
+				<div class = "right"> <p>It is a fact universally acknowledged that a healthy meal that has a low price must be difficult to find. However, it may not be as difficult as you think. This website makes finding healthy options easy, and this section is to tell you why that’s important.</p></div>
+		</div>
 
 
-<!--- <div class="Block BlockSize"> /**/
+		<div class = "container2 contentChild">
+				<span class = "right"><div id="leftChild"><img src = "productivity.png" alt = "productivity"></div></span>
+				<span class = "left"> <p> <strong> 1. When you eat healthy, you get more done!</strong></p> <p>Unhealthy eating limits your ability to do work by increasing risk for lack of productivity by 66%. Studies have shown that those who eat healthy exhibit much more focus than those who don’t. Imagine what you could do with such a massive jump in productivity!</p></span>
+		</div>
 
-	vertical-align: middle;
-	line-height: 250px;
+		<div class = "container1 contentChild">
+				<span class = "left"><img src = "healthliving.png" alt = "healthliving" height = "250px" width="250px"></span>
+				<span class = "right"> <p ><strong>2. Eating Healthy prolongs your life!</strong></p> <p id = "smallText">In addition to lack of exercise, unhealthy eating habits are a major contributor to the large part of the population- a third of adults and 17% of adolescents- who are obese in the United States. Poor diets can also cause illnesses such as heart disease, osteoporosis, high blood pressure, type 2 diabetes, and certain types of cancer.</p></span>
+		</div>
 
- 	<p class= "cent"> <img class = "img-circle" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" allign = "center" src="chlo.jpg" alt="chlo" height="200" width="200"> </p>
- -->
+		<div class = "container2 contentChild">
+				<span class = "right"><img src = "savemoney.jpg" alt = "savemoney" height = "250px" width="400px"></span>
+				<span class = "left"> <p> <strong> 3. Save money!</strong></p> <p id = "smallText">Insurance premiums for life insurance go down for healthier people and healthcare costs an average of $2,741 more for an obese person than one with a normal-weight. That sort of money could be used a myriad of ways, including on the more expensive, but healthier organic foods.</p></span>
+		</div>
 
+		<div class = "container1 contentChild">
+				<span class = "left"><img src = "mentalhealth.jpg" alt = "mentalhealth" height = "250px" width="400px"></span>
+				<span class = "right"> <p><strong>4. Improve your mental health!</strong></p> <p id = "smallText"> Vitamins and minerals found in fruits, whole grains, and vegetables and omega-3 fats in nuts and fatty fish have been found to decrease the risk of depression. Healthy eating also often leads to increased energy, moods stability, better sleep, etc. Foods with omega-3 fatty acids and magnesium can low the stress hormone, cortisol.</p></span>
+		</div>
 
-<div class="container2">
-	<div id="contained" class="purple">
-		<span id = "Text" onmouseover="bigText(Text)" onmouseout="normalText(Text)" ><a class = "notextdec" href = "fs.html"> Home</a></span>
-  		<span id = "Text" onmouseover="bigText(Text1)" onmouseout="normalText(Text1)"> <a class = "notextdec" href = "fshealthy.html">Why Eat Healthy?</a></span>
-  		<span id = "Text" onmouseover="bigText(Text2)" onmouseout="normalText(Text2)"><a class = "notextdec" href = "fsabout.html"> About Us</a></span>
-  		<span id = "Text" onmouseover="bigText(Text3)" onmouseout="normalText(Text3)"> <a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></span>
 	</div>
-
-	<div class = "wehtitle">
-		Why Eat Healthy?
-	</div>
-	
-</div>
-
-<div class = "container1">
-		<span class = "left"><img src = "healthyfood.jpg" alt = "healthyeating" height = "250px" width="400px"></span>
-		<span class = "right"> <p>It is a fact universally acknowledged that a healthy meal that has a low price must be difficult to find. However, it may not be as difficult as you think. This website makes finding healthy options easy, and this section is to tell you why that’s important.</p></span>
-</div>
-
-
-<div class = "container2">
-		<span class = "right"><img src = "productivity.png" alt = "productivity" height = "250px" width="400px"></span>
-		<span class = "left"> <p> <strong> 1. When you eat healthy, you get more done!</strong></p> <p>Unhealthy eating limits your ability to do work by increasing risk for lack of productivity by 66%. Studies have shown that those who eat healthy exhibit much more focus than those who don’t. Imagine what you could do with such a massive jump in productivity!</p></span>
-</div>
-
-<div class = "container1">
-		<span class = "left"><img src = "healthliving.png" alt = "healthliving" height = "250px" width="250px"></span>
-		<span class = "right"> <p ><strong>2. Eating Healthy prolongs your life!</strong></p> <p id = "smallText">In addition to lack of exercise, unhealthy eating habits are a major contributor to the large part of the population- a third of adults and 17% of adolescents- who are obese in the United States. Poor diets can also cause illnesses such as heart disease, osteoporosis, high blood pressure, type 2 diabetes, and certain types of cancer.</p></span>
-</div>
-
-<div class = "container2">
-		<span class = "right"><img src = "savemoney.jpg" alt = "savemoney" height = "250px" width="400px"></span>
-		<span class = "left"> <p> <strong> 3. Save money!</strong></p> <p id = "smallText">Insurance premiums for life insurance go down for healthier people and healthcare costs an average of $2,741 more for an obese person than one with a normal-weight. That sort of money could be used a myriad of ways, including on the more expensive, but healthier organic foods.</p></span>
-</div>
-
-<div class = "container1">
-		<span class = "left"><img src = "mentalhealth.jpg" alt = "mentalhealth" height = "250px" width="400px"></span>
-		<span class = "right"> <p><strong>4. Improve your mental health!</strong></p> <p id = "smallText"> Vitamins and minerals found in fruits, whole grains, and vegetables and omega-3 fats in nuts and fatty fish have been found to decrease the risk of depression. Healthy eating also often leads to increased energy, moods stability, better sleep, etc. Foods with omega-3 fatty acids and magnesium can low the stress hormone, cortisol.</p></span>
-</div>
-
-</div>
 </body>
 </hmtl>
