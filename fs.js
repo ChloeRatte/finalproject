@@ -1,5 +1,7 @@
 function getData() {
   document.getElementById("yourRecipe").innerHTML = "";
+  document.getElementById("recipeName").innerHTML = "";
+  document.getElementById("yourNutrition").innerHTML = "";
 
   var diet = document.getElementById("diet").value;
 
@@ -36,13 +38,16 @@ function getData() {
 
     if(diet=="None"){
       console.log("if");
+      var recipeDiv = document.getElementById("recipeName");
+      var recipeName = document.createTextNode(yieldOptions[0].label);
+      recipeDiv.appendChild(recipeName);
       for (var y=0; y<yieldOptions[0].ingredients.length; y++){
         var theDiv = document.getElementById("yourRecipe");
         var content = document.createTextNode(yieldOptions[0].ingredients[y].text);
-        var recipeName = document.createTextNode(yieldOptions[0].label);
         linebreak = document.createElement("br");
         theDiv.appendChild(linebreak);
         theDiv.appendChild(content);
+
       }
     }else{
 //----------------------------------------------------------------
@@ -62,6 +67,9 @@ function getData() {
         }
 
         else{
+            var recipeDiv = document.getElementById("recipeName");
+            var recipeName = document.createTextNode(dietOptions[0].label);
+            recipeDiv.appendChild(recipeName);
 //================================          
             for (var i=0; i<dietOptions[0].ingredients.length; i++) {
                 // console.log(i);
