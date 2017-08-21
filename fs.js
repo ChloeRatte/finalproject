@@ -85,14 +85,18 @@ function getData() {
                 // document.getElementById("yourRecipe").innerHTML = dietOptions[0].ingredients[i].text;
               }
             for (var j=0; j<dietOptions[0].digest.length; j++) {
+              var nutriAmount = dietOptions[0].digest[j].total.toFixed(0);
+
               var nutritionDiv = document.getElementById("yourNutrition");
-              var nutritionContent = document.createTextNode(dietOptions[0].digest[j].label)
-              var nutritionAmount = document.createTextNode(dietOptions[0].digest[j].total)
-              var nutritionUnit = document.createTextNode(dietOptions[0].digest[j].unit)
+              var nutritionContent = document.createTextNode(dietOptions[0].digest[j].label);
+              var nutritionAmount = document.createTextNode(nutriAmount);
+              var nutritionUnit = document.createTextNode(dietOptions[0].digest[j].unit);
               linebreak = document.createElement("br");
               nutritionDiv.appendChild(linebreak);
               nutritionDiv.appendChild(nutritionContent);
+              nutritionDiv.appendChild (document.createTextNode (" "));
               nutritionDiv.appendChild(nutritionAmount);
+              nutritionDiv.appendChild (document.createTextNode (" "));
               nutritionDiv.appendChild(nutritionUnit);
             }
 //===========================================
