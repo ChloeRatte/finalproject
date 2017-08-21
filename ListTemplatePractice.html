@@ -1,95 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>
-		YumTime
-	</title>
-<link rel = "stylesheet" type="text/css" href="ytlist.css">
-
-  </head>
-
-<body>
-
-
-<div class="container">
-  <div class="purple" id="links">
-        <div class="menuItems"><a class = "notextdec" href = "index.html"> Home</a></div>
-          <div class="menuItems"> <a class = "notextdec" href = "fshealthyreworked.html">Why Eat Healthy?</a></div>
-          <div class="menuItems"><a class = "notextdec" href = "fsabout.html"> About Us</a></div>
-          <div class="menuItems"> <a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></div>
-  </div>
-</div>
-<div>
-  <img id="img" src="Get REcipes (1).png"></img>
-</div>
-
-<div class="centered">
-<h1>CREATE YOUR LIST!</h1>
-
-<h2>Do you have any dietary restrictions?</h2>
-<select name ="diet" id="diet">
-  <option value="None">None</option>
-  <option value="Vegan">Vegan</option>
-  <option value="Vegetarian">Vegetarian</option>
-  <option value="Paleo">Paleo</option>
-  <option value="Dairy-Free">Dairy Free</option>
-  <option value="Gluten-Free">Gluten Free</option>
-  <option value="Wheat-Free">Wheat Free</option>
-  <option value="Fat-Free">Fat Free</option>
-  <option value="Low-Sugar">Low Sugar</option>  
-  <option value="Egg-Free">Egg Free</option>
-  <option value="Peanut-Free">Peanut Free</option>
-  <option value="Tree-Nut-Free">Tree Nut Free</option>
-  <option value="Soy-Free">Soy Free</option>
-  <option value="Fish-Free">Fish Free</option>
-  <option value="Shellfish-Free">Shellfish Free</option>
-</select>
-
-<br>
-<h2>How many people are you going to be feeding?</h2>
-<select name="numPeople" id="numPeople">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
-<br>
-
-<h2>What meal of the day are you making?</h2>
-<select name="meal" id="meal">
-  <option value="breakfast">Breakfast</option>
-  <option value="lunch">Lunch</option>
-  <option value="dinner">Dinner</option>
-  <option value="dessert">Dessert</option>
-</select>
-</div>
-<br>
-
-
-
-<div class="centered">
-    <button  onclick="getData()"><center>Get Your Recipe</center></button>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="fs.js"></script>
-</div>
-  <div class="centered" id="recipeName"></div>
-  <div id="recipeImage"></div>  
-</div>
-
-
-<div id="bottom">
-   <div id="yourRecipe"></div>
-   <div id="yourNutrition"></div>
-
-</div>
-
-
-
-
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
 <title>YumTime List</title>
@@ -116,12 +24,12 @@ body {font-family: "Lato", sans-serif}
 
 #yourRecipe{
   float: left;
-  padding: 50px;
+/*  padding: 50px;*/
 }
 
 #yourNutrition{
   float: right;
-  padding: 50px;
+ /* padding: 50px;*/
 }
 
 .centered{
@@ -129,13 +37,6 @@ body {font-family: "Lato", sans-serif}
   margin: auto;
 }
 
-.hidden {
-display:none;
-}
-.visible {
-display:block;
-}
-  
 
 </style>
 <body>
@@ -162,7 +63,7 @@ display:block;
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <img src="Get REcipes (1).png" style="width:100%" style="height:90%">
+ 	<img src="Get REcipes (1).png" style="width:100%" style="height:90%">
   </div>
   
     </div>
@@ -170,6 +71,8 @@ display:block;
 
  
 <div class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<h1 class="centered">CREATE YOUR LIST!</h1>
+
 <h2 class="centered">Do you have any dietary restrictions?</h2>
   <select name ="diet" id="diet">
     <option value="None">None</option>
@@ -188,7 +91,7 @@ display:block;
     <option value="Fish-Free">Fish Free</option>
     <option value="Shellfish-Free">Shellfish Free</option>
   </select>
-<br>
+
 <br>
 <h2 class="centered">How many people are you going to be feeding?</h2>
   <select name="numPeople" id="numPeople">
@@ -198,15 +101,16 @@ display:block;
     <option value="4">4</option>
   </select>
 <br>
-<br>
+
 <h2 class="centered">What meal of the day are you making?</h2>
   <select name="meal" id="meal">
+    <option value="breakfast">Breakfast</option>
     <option value="lunch">Lunch</option>
     <option value="dinner">Dinner</option>
     <option value="dessert">Dessert</option>
   </select>
 
-<br><br><br>
+
 <div class="centered">
   <button  onclick="getData()"><center>Get Your Recipe</center></button>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -216,7 +120,6 @@ display:block;
 
 </br>
 <div class="centered">
-<img src="salad-tossing.gif" id="loading" class="hidden">
 <h2 class="centered" id="recipeName"></h2>
 <div id="recipeImage"></div>
 </div>

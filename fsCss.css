@@ -1,42 +1,25 @@
-/*PALLETE
-NAVY #282F39
-GREEN #6E8328
-ORANGE #DE461F
-WHITE #FFFFFF
-YELLOW #EBB51F
-*/
 
 #map {
         height: 400px;
         width: 100%;
        }
        
-#content{
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-}
-
-.contentChild {
-	width: 100%;
-	height: auto;
-}
+#conten{
+	}
 #titl{
 	text-align: center;
 	color: rgb(62, 36, 157);
 }
 .purple{
-	opacity: 0.3;
-	background-color: #5fdb46;
+	background-color: #5fdb46
 	font-size: 20px;
 	text-align: center;
-	vertical-align: middle;
-	line-height: 50px;
-	color: #459D72;
+	color: rgb(193, 176, 244);
+	font-family: "Sans Serif";
 }
 .cent{
 	text-align: center;
-	font-size: 30px;
+	color: #FEFF51;
 
 }
 #imag {
@@ -59,131 +42,52 @@ YELLOW #EBB51F
 .low{
 	font-size: 20px;
 	text-align: center;
-	color: #459D72;
+	color: rgb(193, 176, 244);
 }
-.menuItems{
-    color: #FFFFFF;
-	width: 25%;
+#Text{
+    color: #000000;
+    padding: 100px 10px;
     text-align: center;
+    font-size: 30px;
     font-family: "Ariel";
     text-decoration: none;
-    font-size: 30px;
-    float: left;
 }
-
-.right{
-	min-width: 49%;
-	float: right;
-	text-align: center;
-	font-size: 30px;
-	color: #90D26D;
-	height: 100%;
-	width: 49%;
-}
-
-
-.left{
-	min-width: 49%;
-	float: left;
-	text-align: center;
-	font-size: 25px;
-	color: #FFFFFF;
-	height: 100%;
-	width: 49%;
-}
-
-.left img{
-	height: 100%/*300px;*/;
-	width: 80%/*380px*/;
-}
-
-.right img{
-	height: 100%/*300px;*/;
-	width: 80%/*380px*/;
-}
-
-#leftChild{
-	text-align: center;
-	height: 100%;
-	width: 100%;
-}
-
-.grey{
-	background-color: #DE461F;
-	min-height: 250px;
-}
-
-.white{
-	background-color: #EBB51F;
-}
-
-
-
 
 .notextdec{
-	color: #FFFFFF;
+	color: white;
 	text-decoration: none;
-}
-
-#smallText{
-	font-size: 23px;
 }
 
 .img-circle {
     border-radius: 50%;
 }
-
 .white{
-		background-color: #EBB51F;
+		background-color: #ffffff;
 		font-size: 70px;
 }
-
-.container1{
-	min-height: 250px;
-	background-color: #FFFFFF;
+.container{
+	/*height: 230px;*/
 }
-
-.container2{
-	min-height: 250px;
-	background-color: #90D26D;
-}
-
-#links{
-	background-color: #282F39;
-	width: 100%;
-	overflow: auto;
-}
-
-.imgCover img{
-	height: 100%;
-	width: 100%;
-}
-
 .wehtitle{
 	font-size: 100px;
-	color: #FFFFFF;
-	text-align: center;
-	vertical-align: middle;
-	padding-top: 30px;
+	color: rgb();
 }
-
 #contained{
-	height: 60px;
+	height: 50px;
 	text-align: center;
-
+	color: rgb(62, 36, 157);
 }
-
 #contain2{
 	height: 30px;
 }
-
 .black{
 	background-color: rgb(158, 158, 158);
 
 }
-
 body{
-	background-color: #FFEED0
+
+	background-color: 
+
 }
 
 #forLittleBlerbs{
@@ -208,9 +112,63 @@ h2{
 	max-width: 800px
 }
 
-.dropbtn {
+#blerb{
+	text-align: center;
+}
+
+
+
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+ 	@font-face {
+    	font-family: myFirstFont;
+    	src: url('./TheLightFont.ttf') format('truetype');
+
+
+ 
+ }
+/*/*/*/*/*.dropbtn {
     background-color: #4CAF50;
-    color: #FFFFFF;
+    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -250,4 +208,5 @@ h2{
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {display:block;}*/*/*/*/*/
+
