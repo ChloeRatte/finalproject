@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -64,7 +64,7 @@
 </select>
 </div>
 <br>
-<!-- This is for  generating the list -->
+
 
 
 <div class="centered">
@@ -83,6 +83,145 @@
 
 </div>
 
+
+
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<title>YumTime List</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fs.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {font-family: "Lato", sans-serif}
+  .purple{
+  opacity: 0.3;
+  background-color: #5fdb46;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  height: 10%;
+  color: rgb(193, 176, 244);
+}
+
+
+#yourRecipe{
+  float: left;
+/*  padding: 50px;*/
+}
+
+#yourNutrition{
+  float: right;
+ /* padding: 50px;*/
+}
+
+.centered{
+  /*text-align: center;*/
+  margin: auto;
+}
+
+
+</style>
+<body>
+  
+<!-- Navbar -->
+<div class="w3-top" id = "links">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large menuItems">Home</a>
+    <a href="fshealthyreworked.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small menuItems">Why Eat Healthy?</a>
+    <a href="fsabout.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small menuItems">About Us</a>
+    <a href="fsyourlist.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small menuItems">Your List</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo links" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top purple" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Why Eat Healthy?</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Your List</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <img src="Get REcipes (1).png" style="width:100%" style="height:90%">
+  </div>
+  
+    </div>
+  </div>
+
+ 
+<div class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<h1 class="centered">CREATE YOUR LIST!</h1>
+
+<h2 class="centered">Do you have any dietary restrictions?</h2>
+  <select name ="diet" id="diet">
+    <option value="None">None</option>
+    <option value="Vegan">Vegan</option>
+    <option value="Vegetarian">Vegetarian</option>
+    <option value="Paleo">Paleo</option>
+    <option value="Dairy-Free">Dairy Free</option>
+    <option value="Gluten-Free">Gluten Free</option>
+    <option value="Wheat-Free">Wheat Free</option>
+    <option value="Fat-Free">Fat Free</option>
+    <option value="Low-Sugar">Low Sugar</option>  
+    <option value="Egg-Free">Egg Free</option>
+    <option value="Peanut-Free">Peanut Free</option>
+    <option value="Tree-Nut-Free">Tree Nut Free</option>
+    <option value="Soy-Free">Soy Free</option>
+    <option value="Fish-Free">Fish Free</option>
+    <option value="Shellfish-Free">Shellfish Free</option>
+  </select>
+
+<br>
+<h2 class="centered">How many people are you going to be feeding?</h2>
+  <select name="numPeople" id="numPeople">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+<br>
+
+<h2 class="centered">What meal of the day are you making?</h2>
+  <select name="meal" id="meal">
+    <option value="breakfast">Breakfast</option>
+    <option value="lunch">Lunch</option>
+    <option value="dinner">Dinner</option>
+    <option value="dessert">Dessert</option>
+  </select>
+
+
+<div class="centered">
+  <button  onclick="getData()"><center>Get Your Recipe</center></button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="fs.js"></script>
+</div>
+
+
+</br>
+<div class="centered">
+<h2 class="centered" id="recipeName"></h2>
+<div id="recipeImage"></div>
+</div>
+<div id="bottom">
+   <div id="yourRecipe"></div>
+   <div id="yourNutrition"></div>
+
+</div>
+</div>
+</div>
 
 
 
