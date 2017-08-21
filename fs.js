@@ -3,6 +3,7 @@ function getData() {
   document.getElementById("recipeName").innerHTML = "";
   document.getElementById("yourNutrition").innerHTML = "";
 
+
   var diet = document.getElementById("diet").value;
 
   var peopleValue = document.getElementById("numPeople").value;
@@ -34,29 +35,32 @@ function getData() {
       }
 
       console.log(yieldOptions);
+      var num = 0;
 
+      var x = Math.floor(Math.random()*yieldOptions.length);
+      num = x; 
 
     if(diet=="None"){
       console.log("if");
       var recipeDiv = document.getElementById("recipeName");
-      var recipeName = document.createTextNode(yieldOptions[0].label);
+      var recipeName = document.createTextNode(yieldOptions[num].label);
       var recipeImage = document.createElement("img")
-      recipeImage.setAttribute("src", yieldOptions[0].image);
+      recipeImage.setAttribute("src", yieldOptions[num].image);
       document.getElementById("recipeImage").appendChild(recipeImage);
       recipeDiv.appendChild(recipeName);
-      for (var y=0; y<yieldOptions[0].ingredients.length; y++){
+      for (var y=0; y<yieldOptions[num].ingredients.length; y++){
         var theDiv = document.getElementById("yourRecipe");
-        var content = document.createTextNode(yieldOptions[0].ingredients[y].text);
+        var content = document.createTextNode(yieldOptions[num].ingredients[y].text);
         linebreak = document.createElement("br");
         theDiv.appendChild(linebreak);
         theDiv.appendChild(content);
       }
-      for (var k=0; k<yieldOptions[0].digest.length; k++) {
-        var nutriAmount = yieldOptions[0].digest[k].total.toFixed(0);
+      for (var k=0; k<yieldOptions[num].digest.length; k++) {
+        var nutriAmount = yieldOptions[num].digest[k].total.toFixed(0);
         var nutritionDiv = document.getElementById("yourNutrition");
-        var nutritionContent = document.createTextNode(yieldOptions[0].digest[k].label);
+        var nutritionContent = document.createTextNode(yieldOptions[num].digest[k].label);
         var nutritionAmount = document.createTextNode(nutriAmount);
-        var nutritionUnit = document.createTextNode(yieldOptions[0].digest[k].unit);
+        var nutritionUnit = document.createTextNode(yieldOptions[num].digest[k].unit);
         linebreak = document.createElement("br");
         nutritionDiv.appendChild(linebreak);
         nutritionDiv.appendChild(nutritionContent);
