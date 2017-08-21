@@ -1,3 +1,10 @@
+/*PALLETE
+NAVY #282F39
+GREEN #6E8328
+ORANGE #DE461F
+WHITE #FFFFFF
+YELLOW #EBB51F
+*/
 
 #map {
         height: 400px;
@@ -24,7 +31,7 @@
 	text-align: center;
 	vertical-align: middle;
 	line-height: 50px;
-	color: rgb(193, 176, 244);
+	color: #459D72;
 }
 .cent{
 	text-align: center;
@@ -51,10 +58,10 @@
 .low{
 	font-size: 20px;
 	text-align: center;
-	color: rgb(193, 176, 244);
+	color: #459D72;
 }
 .menuItems{
-    color: white;
+    color: #FFFFFF;
 	width: 25%;
     text-align: center;
     font-family: "Ariel";
@@ -68,7 +75,7 @@
 	float: right;
 	text-align: center;
 	font-size: 30px;
-	color: #C1C1D1;
+	color: #90D26D;
 	height: 100%;
 	width: 49%;
 }
@@ -79,7 +86,7 @@
 	float: left;
 	text-align: center;
 	font-size: 25px;
-	color: white;
+	color: #FFFFFF;
 	height: 100%;
 	width: 49%;
 }
@@ -101,19 +108,19 @@
 }
 
 .grey{
-	background-color: #C1C1D1;
+	background-color: #DE461F;
 	min-height: 250px;
 }
 
 .white{
-	background-color: white;
+	background-color: #EBB51F;
 }
 
 
 
 
 .notextdec{
-	color: white;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
@@ -126,29 +133,34 @@
 }
 
 .white{
-		background-color: #ffffff;
+		background-color: #EBB51F;
 		font-size: 70px;
 }
 
 .container1{
 	min-height: 250px;
-	background-color: #ffffff;
+	background-color: #FFFFFF;
 }
 
 .container2{
 	min-height: 250px;
-	background-color: #C1C1D1;
+	background-color: #90D26D;
 }
 
 #links{
-	background-color: green;
+	background-color: #282F39;
 	width: 100%;
 	overflow: auto;
 }
 
+.imgCover img{
+	height: 100%;
+	width: 100%;
+}
+
 .wehtitle{
 	font-size: 100px;
-	color: white;
+	color: #FFFFFF;
 	text-align: center;
 	vertical-align: middle;
 	padding-top: 30px;
@@ -197,7 +209,7 @@ h2{
 
 .dropbtn {
     background-color: #4CAF50;
-    color: white;
+    color: #FFFFFF;
     padding: 16px;
     font-size: 16px;
     border: none;
