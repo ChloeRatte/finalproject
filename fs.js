@@ -1,4 +1,10 @@
 function getData() {
+  document.getElementById("loading").className="visible";
+  function hide(){
+    document.getElementById("loading").className="hidden"
+    }
+
+
   document.getElementById("yourRecipe").innerHTML = "";
   document.getElementById("recipeName").innerHTML = "";
   document.getElementById("yourNutrition").innerHTML = "";
@@ -78,7 +84,8 @@ function getData() {
         nutritionDiv.appendChild(nutritionAmount);
         nutritionDiv.appendChild (document.createTextNode (" "));
         nutritionDiv.appendChild(nutritionUnit);
-            }
+        hide();
+      }
     }else{
 //----------------------------------------------------------------
         console.log("else");
@@ -145,6 +152,7 @@ function getData() {
               nutritionDiv.appendChild(nutritionAmount);
               nutritionDiv.appendChild (document.createTextNode (" "));
               nutritionDiv.appendChild(nutritionUnit);
+              hide();
             }
 //===========================================
             }
@@ -154,11 +162,11 @@ function getData() {
 
 
 
-      alert("success");
+      // alert("success");
     },
     error: function(err) {
       console.log(err);
-      alert("error");
+      // alert("error");
     }
   })  
 };
