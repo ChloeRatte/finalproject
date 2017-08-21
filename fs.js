@@ -40,6 +40,9 @@ function getData() {
       console.log("if");
       var recipeDiv = document.getElementById("recipeName");
       var recipeName = document.createTextNode(yieldOptions[0].label);
+      var recipeImage = document.createElement("img")
+      recipeImage.setAttribute("src", yieldOptions[0].image);
+      document.getElementById("recipeImage").appendChild(recipeImage);
       recipeDiv.appendChild(recipeName);
       for (var y=0; y<yieldOptions[0].ingredients.length; y++){
         var theDiv = document.getElementById("yourRecipe");
@@ -82,7 +85,11 @@ function getData() {
         else{
             var recipeDiv = document.getElementById("recipeName");
             var recipeName = document.createTextNode(dietOptions[0].label);
+            var recipeImage = document.createElement("img")
+            recipeImage.setAttribute("src", dietOptions[0].image);
+            document.getElementById("recipeImage").appendChild(recipeImage);
             recipeDiv.appendChild(recipeName);
+
 //================================          
             for (var i=0; i<dietOptions[0].ingredients.length; i++) {
                 // console.log(i);
