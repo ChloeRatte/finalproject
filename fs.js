@@ -39,6 +39,7 @@ function getData() {
       for (var y=0; y<yieldOptions[0].ingredients.length; y++){
         var theDiv = document.getElementById("yourRecipe");
         var content = document.createTextNode(yieldOptions[0].ingredients[y].text);
+        var recipeName = document.createTextNode(yieldOptions[0].label);
         linebreak = document.createElement("br");
         theDiv.appendChild(linebreak);
         theDiv.appendChild(content);
