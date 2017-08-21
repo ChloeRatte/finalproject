@@ -49,6 +49,15 @@ function getData() {
       recipeImage.setAttribute("src", yieldOptions[num].image);
       document.getElementById("recipeImage").appendChild(recipeImage);
       recipeDiv.appendChild(recipeName);
+
+      var ingredients = document.createTextNode("Ingredients:");
+      var theDiv = document.getElementById("yourRecipe");
+      theDiv.appendChild(ingredients);
+
+      var nutrition = document.createTextNode("Nutrition:");
+      var nutritionDiv = document.getElementById("yourNutrition");
+      nutritionDiv.appendChild(nutrition);
+      
       for (var y=0; y<yieldOptions[num].ingredients.length; y++){
         var theDiv = document.getElementById("yourRecipe");
         var content = document.createTextNode(yieldOptions[num].ingredients[y].text);
@@ -89,8 +98,9 @@ function getData() {
 
         else{
             var num = 0;
-            var x = Math.floor(Math.random()*yieldOptions.length);
+            var x = Math.floor(Math.random()*dietOptions.length);
             num = x; 
+
 
             var recipeDiv = document.getElementById("recipeName");
             var recipeName = document.createTextNode(dietOptions[num].label);
@@ -98,6 +108,14 @@ function getData() {
             recipeImage.setAttribute("src", dietOptions[num].image);
             document.getElementById("recipeImage").appendChild(recipeImage);
             recipeDiv.appendChild(recipeName);
+
+            var ingredients = document.createTextNode("Ingredients:");
+            var theDiv = document.getElementById("yourRecipe");
+            theDiv.appendChild(ingredients);
+
+            var nutrition = document.createTextNode("Nutrition:");
+            var nutritionDiv = document.getElementById("yourNutrition");
+            nutritionDiv.appendChild(nutrition);
 
 //================================          
             for (var i=0; i<dietOptions[num].ingredients.length; i++) {
