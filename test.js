@@ -5,10 +5,10 @@ function getData() {
   $.ajax({
     url: "https://api.edamam.com/search",
     data: {
-      q: "breakfast",
+      q: "lunch",
       app_id:"0af4c33f",
       app_key:"95be53f1e879fb340befc460bf37611b",
-      from: 1,
+      from: 0,
       to: 5,
     },
     success: function(data) {

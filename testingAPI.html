@@ -1,0 +1,81 @@
+<html>
+
+<body>
+<!-- <div class="container">
+  <div id="contained" class="purple">
+		  <span id = "Text"><a class = "notextdec" href = "fs.html"> Home</a></span>
+      <span id = "Text"><a class = "notextdec" href = "fshealthy.html">Why Eat Healthy?</a></span>
+      <span id = "Text"><a class = "notextdec" href = "fsabout.html"> About Us</a></span>
+      <span id = "Text"><a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></span>
+  </div>
+	<h1>CREATE YOUR LIST!</h1>
+</div> -->
+
+<input type="text" id="zipcode" placeholder="Input Zipcode"></input>
+
+<input type="text" id="categories" placeholder="Input serach word?"></input>
+<br/>
+<button id="addEntryBtn" onclick="search()">Search for Restaurants Near You</button>
+
+
+<div id="restaurants"></div>
+
+
+<!-- beginning of script -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+
+
+
+function search() 
+{
+
+  document.getElementById("restaurants").innerHTML = "";
+
+  var zipcode = document.getElementById("zipcode").value;
+
+var category = document.getElementById("categories").value;
+
+  $.ajax
+  ({
+    url: "https://api.yelp.com/v3/businesses/search",
+    method: 'GET',
+    header: {
+    	'Access-Control-Allow-Headers': 'Authorization',
+
+    	'Authorization': "Bearer ETxK5BC-1B6qFGKuAbOLoxGIHIT6Y9kjAqf-RAEi1_wrT43wWhFziy5sbMJpoxWJ70n6_YUkbf5tF-19N7mp09-_RNMfiL5NufxmbI7NHol3NsQhLMNlISIx1gWXWXYx",
+    	'ContentType': "application/x-www-form-urlencoded",
+    },
+
+
+    data: {
+      location: zipcode,
+      categories: category,
+      limit: 20,
+    },
+    success: function(data) 
+    {
+      console.log(data);
+      alert("success");
+    },
+
+    error: function(err) 
+    {
+      console.log(err);
+      alert("error");
+    }
+  })
+};  
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

@@ -19,6 +19,7 @@
 	color: rgb(62, 36, 157);
 }
 .purple{
+	opacity: 0.3;
 	background-color: #5fdb46;
 	font-size: 20px;
 	text-align: center;
