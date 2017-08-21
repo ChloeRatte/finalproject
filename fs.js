@@ -2,6 +2,7 @@ function getData() {
   document.getElementById("yourRecipe").innerHTML = "";
   document.getElementById("recipeName").innerHTML = "";
   document.getElementById("yourNutrition").innerHTML = "";
+  document.getElementById("recipeImage").innerHTML = "";
 
 
   var diet = document.getElementById("diet").value;
