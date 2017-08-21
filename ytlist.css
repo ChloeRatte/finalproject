@@ -12,8 +12,13 @@
 }
 
 .container{
-	background-image: url(food.gif);
-	background-size: cover;
+	width: auto;
+	height: 100%;
+	overflow: auto;
+}
+
+#image{
+	min-width: 100%;
 }
 
 .menuItems{
