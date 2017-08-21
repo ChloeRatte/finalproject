@@ -1,0 +1,45 @@
+
+.purple{
+	background-color: rgba(95,219,70, 0.5);
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+.centered{
+	text-align: center;
+}
+
+.container{
+	background-image: url(food.gif);
+	background-size: cover;
+}
+
+.menuItems{
+    color: white;
+	width: 25%;
+    text-align: center;
+    font-family: "Ariel";
+    text-decoration: none;
+    font-size: 30px;
+    float: left;
+}
+
+.notextdec{
+	color: white;
+	text-decoration: none;
+}
+
+#links{
+	width: 100%;
+	overflow: auto;
+}
+
+#yourRecipe{
+	float: left;
+}
+
+#yourNutrition{
+	float: right;
+}
