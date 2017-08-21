@@ -116,12 +116,12 @@ body {font-family: "Lato", sans-serif}
 
 #yourRecipe{
   float: left;
-/*  padding: 50px;*/
+  padding: 50px;
 }
 
 #yourNutrition{
   float: right;
- /* padding: 50px;*/
+  padding: 50px;
 }
 
 .centered{
@@ -164,7 +164,7 @@ body {font-family: "Lato", sans-serif}
  
 <div class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
 <h1 class="centered">CREATE YOUR LIST!</h1>
-
+8
 <h2 class="centered">Do you have any dietary restrictions?</h2>
   <select name ="diet" id="diet">
     <option value="None">None</option>
@@ -183,7 +183,7 @@ body {font-family: "Lato", sans-serif}
     <option value="Fish-Free">Fish Free</option>
     <option value="Shellfish-Free">Shellfish Free</option>
   </select>
-
+<br>
 <br>
 <h2 class="centered">How many people are you going to be feeding?</h2>
   <select name="numPeople" id="numPeople">
@@ -193,16 +193,15 @@ body {font-family: "Lato", sans-serif}
     <option value="4">4</option>
   </select>
 <br>
-
+<br>
 <h2 class="centered">What meal of the day are you making?</h2>
-  <select name="meal" id="meal">
-    <option value="breakfast">Breakfast</option>
+  <select name="meal" id="meal    <option value="breakfast">Breakfast</option>
     <option value="lunch">Lunch</option>
     <option value="dinner">Dinner</option>
     <option value="dessert">Dessert</option>
   </select>
 
-
+<br><br><br>
 <div class="centered">
   <button  onclick="getData()"><center>Get Your Recipe</center></button>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
