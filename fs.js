@@ -47,8 +47,21 @@ function getData() {
         linebreak = document.createElement("br");
         theDiv.appendChild(linebreak);
         theDiv.appendChild(content);
-
       }
+      for (var k=0; k<yieldOptions[0].digest.length; k++) {
+        var nutriAmount = yieldOptions[0].digest[k].total.toFixed(0);
+        var nutritionDiv = document.getElementById("yourNutrition");
+        var nutritionContent = document.createTextNode(yieldOptions[0].digest[k].label);
+        var nutritionAmount = document.createTextNode(nutriAmount);
+        var nutritionUnit = document.createTextNode(yieldOptions[0].digest[k].unit);
+        linebreak = document.createElement("br");
+        nutritionDiv.appendChild(linebreak);
+        nutritionDiv.appendChild(nutritionContent);
+        nutritionDiv.appendChild (document.createTextNode (" "));
+        nutritionDiv.appendChild(nutritionAmount);
+        nutritionDiv.appendChild (document.createTextNode (" "));
+        nutritionDiv.appendChild(nutritionUnit);
+            }
     }else{
 //----------------------------------------------------------------
         console.log("else");
