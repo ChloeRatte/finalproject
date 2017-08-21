@@ -101,6 +101,7 @@ function getData() {
         }
         if (foundRecipe==false){
           document.getElementById("yourRecipe").innerHTML = "There are no recipes that match your search"
+          hide();
         }
 
         else{
