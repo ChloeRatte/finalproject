@@ -1,68 +1,232 @@
+<!DOCTYPE html>
 <html>
-<head> 
-	<script type="text/javascript" src="fs.js"></script>
-	<title> YumTime </title>
-	<link rel = "stylesheet" type="text/css" href="fs.css">
- 	<style>
-		body{
-			background-color: #90D26D;
-		} 
+<title>Yumtime</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fs.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+	.purple{
+	opacity: 0.3;
+	background-color: #5fdb46;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	height: 7%;
+	color: rgb(193, 176, 244);
+}
+.justforcentering{
+	text-align: center;
+}
 
-		.content {
-			height: 100%;
-			width: 100%;
-			overflow: auto;
-			
-		}
-
-		.contentChild {
-			min-height: 350px;
-			height: 16%;
-			overflow: auto;
-			
-		}
-	</style>
-</head>
-
+.centertitle {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.centericon {
+	position: relative;
+	left: 48.5%;
+}
+</style>
 <body>
-	<div id = "content">
-		<div class = "grey">
-			<div class="purple" id="links">
-				<div class="menuItems"><a class = "notextdec" href = "index.html"> Home</a></div>
-		  		<div class="menuItems"> <a class = "notextdec" href = "fshealthyreworked.html">Why Eat Healthy?</a></div>
-		  		<div class="menuItems"><a class = "notextdec" href = "fsabout.html"> About Us</a></div>
-		  		<div class="menuItems"> <a class = "notextdec" href = "fsyourlist.html">Your Shopping List</a></div>
-		  	</div>
-		  	<div class = "wehtitle">
-				Why Eat Healthy?
-			</div>
-		</div>
+  
+<!-- Navbar -->
+<div class="w3-top" id = "links">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large menuItems">Home</a>
+    <a href="fshealthyreworked.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small menuItems">Why Eat Healthy?</a>
+    <a href="fsabout.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small menuItems">About Us</a>
+    <a href="fsyourlist.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small menuItems">Your Recipe</a>
+  </div>
+</div>
 
-		<div class = "contentChild white">
-				<div class = "left"><div id = "leftChild"><img src = "healthyfood.jpg" alt = "healthyeating"></div></div>
-				<div class = "right"> <p>A healthy meal that has a low price must be difficult to find, but it may not be as difficult as you think. This website makes finding healthy options easy, and this section is to tell you why that’s important.</p></div>
-		</div>
+<!-- Navbar on small screens -->
+<div id="navDemo links" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top purple" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Why Eat Healthy?</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Your Recipe</a>
+</div>
 
-		<div class = "contentChild grey">
-			<div class = "right"><div id="leftChild"><img src = "productivity.png" alt = "productivity"></div></div>
-			<div class = "left"> <p> <strong> 1. When you eat healthy, you get more done!</strong></p> <p>Unhealthy eating limits your ability to do work by increasing risk for lack of productivity by 66%. Studies have shown that those who eat healthy exhibit much more focus than those who don’t. Imagine what you could do with such a massive jump in productivity!</p></div>
-		</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top: 69px;height: 570px;width: 100%;">
 
-		<div class = "contentChild white">
-			<div class = "left"><div id="leftChild"><img src = "healthliving.png" alt = "healthliving"></div></div>
-			<div class = "right"> <p ><strong>2. Eating Healthy prolongs your life!</strong></p> <p>In addition to lack of exercise, unhealthy eating habits are a major contributor to the large part of the population- a third of adults and 17% of adolescents- who are obese in the United States. Poor diets can also cause illnesses such as heart disease, osteoporosis, high blood pressure, type 2 diabetes, and certain types of cancer.</p></div>
-		</div>
+  <!-- Automatic Slideshow Images -->
+ 	<img src="WHy Eat healthy-.png" style="width: inherit;height: inherit;">
+  </div>
+ <div class="w3-container centertitle" style="background-color: white">
+  <img src="downbtn.svg" class="centericon" style="height: 30px;width: 30px;margin-left: 5px" onclick="window.scrollTo(0, 660)"></img>
+</div>
+    </div>
+  </div>
+  <div style="background-color: white;height: 15px;width: 100%">
+    	</div>
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:2000px;margin-top: 69px;height: 550px;width: 100%" id="band">
+    <div class = "centertitle"><h2 class="w3-wide">WHY EAT HEALTHY?</h2>
+    <p class="w3-justify justforcentering">A healthy meal that has a low price must be difficult to find, but it may not be as difficult as you think. This website makes finding healthy options easy, and this section is to tell you why that’s important.</p></div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="fruits!!.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+        <div class="w3-third">
+        <img src="veggie3.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="FruitsVeggies.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    	
+  </div>
+  <div class="w3-container" style="background-color: white">
+  <img src="downbtn.svg" class= "centericon" style="height: 30px;width: 30px;margin-left: 2px" onclick="window.scrollTo(0, 1305)"></img>
+  </div>
+  <!-- The Tour Section -->
+  
 
-		<div class = "contentChild grey">
-			<div class = "right"><div id="leftChild"><img src = "savemoney.jpg" alt = "savemoney"></div></div>
-			<div class = "left"> <p> <strong> 3. Save money!</strong></p> <p>Insurance premiums for life insurance go down for healthier people and healthcare costs an average of $2,741 more for an obese person than one with a normal-weight. That sort of money could be used a myriad of ways, including on the more expensive, but healthier organic foods.</p></div>
-		</div>
 
-		<div class = "contentChild white">
-			<div class = "left"><div id="leftChild"><img src = "mentalhealth.jpg" alt = "mentalhealth"></div></div>
-			<div class = "right"> <p><strong>4. Improve your mental health!</strong></p> <p> Vitamins and minerals found in fruits, whole grains, and vegetables and omega-3 fats in nuts and fatty fish have been found to decrease the risk of depression. Healthy eating also often leads to increased energy, moods stability, better sleep, etc. Foods with omega-3 fatty acids and magnesium can low the stress hormone, cortisol.</p></div>
-		</div>
 
-	</div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:2000px;margin-top: 69px;height: 550px;width: 100%" id="band">
+    <div class = "centertitle"><h2 class="w3-wide">1. When you eat healthy, you get more done!</h2>
+    <p class="w3-justify justforcentering">Unhealthy eating limits your ability to do work by increasing risk for lack of productivity by 66%. Studies have shown that those who eat healthy exhibit much more focus than those who don’t. Imagine what you could do with such a massive jump in productivity!</p></div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="pro2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+        <div class="w3-third">
+        <img src="pro1.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="pro3.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    	
+  </div>
+  <div class="w3-container" style="background-color: white">
+  <img src="downbtn.svg" class= "centericon" style="height: 30px;width: 30px;margin-left: 2px" onclick="window.scrollTo(0, 1960)"></img>
+  </div>
+
+  
+
+
+
+
+
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:2000px;margin-top: 69px;height: 560px;width: 100%" id="band">
+    <div class = "centertitle"><h2 class="w3-wide">2. Eating Healthy prolongs your life!</h2>
+    <p class="w3-justify justforcentering">In addition to lack of exercise, unhealthy eating habits are a major contributor to the large part of the population- a third of adults and 17% of adolescents- who are obese in the United States. Poor diets can also cause illnesses such as heart disease, osteoporosis, high blood pressure, type 2 diabetes, and certain types of cancer.</p></div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="pro2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+        <div class="w3-third">
+        <img src="pro1.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="pro3.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    	
+  </div>
+  <div class="w3-container" style="background-color: white">
+  <img src="downbtn.svg" class= "centericon" style="height: 30px;width: 30px;margin-left: 2px" onclick="window.scrollTo(0, 2615)"></img>
+  </div>
+
+
+
+
+
+
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:2000px;margin-top: 69px;height: 560px;width: 100%" id="band">
+    <div class = "centertitle"><h2 class="w3-wide">3. Save money!</h2>
+    <p class="w3-justify justforcentering">Insurance premiums for life insurance go down for healthier people and healthcare costs an average of $2,741 more for an obese person than one with a normal-weight. That sort of money could be used a myriad of ways, including on the more expensive, but healthier organic foods.</p></div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="pro2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+        <div class="w3-third">
+        <img src="pro1.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="pro3.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    	
+  </div>
+  <div class="w3-container" style="background-color: white">
+  <img src="downbtn.svg" class= "centericon" style="height: 30px;width: 30px;margin-left: 2px" onclick="window.scrollTo(0, 3250)"></img>
+  </div>
+
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:2000px;margin-top: 69px;height: 560px;width: 100%" id="band">
+    <div class = "centertitle"><h2 class="w3-wide">4. Improve your mental health! </h2>
+    <p class="w3-justify justforcentering">Vitamins and minerals found in fruits, whole grains, and vegetables and omega-3 fats in nuts and fatty fish have been found to decrease the risk of depression. Healthy eating also often leads to increased energy, moods stability, better sleep, etc. Foods with omega-3 fatty acids and magnesium can low the stress hormone, cortisol.</p></div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="pro2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+        <div class="w3-third">
+        <img src="pro1.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <img src="pro3.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    	
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
-</hmtl>
+</html>

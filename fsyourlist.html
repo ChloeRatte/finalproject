@@ -129,6 +129,13 @@ body {font-family: "Lato", sans-serif}
   margin: auto;
 }
 
+.hidden {
+display:none;
+}
+.visible {
+display:block;
+}
+  
 
 </style>
 <body>
@@ -162,8 +169,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
  
-<div class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
-<h1 class="centered">CREATE YOUR LIST!</h1>
+<div class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
 <h2 class="centered">Do you have any dietary restrictions?</h2>
   <select name ="diet" id="diet">
     <option value="None">None</option>
@@ -210,6 +216,7 @@ body {font-family: "Lato", sans-serif}
 
 </br>
 <div class="centered">
+<img src="salad-tossing.gif" id="loading" class="hidden">
 <h2 class="centered" id="recipeName"></h2>
 <div id="recipeImage"></div>
 </div>
